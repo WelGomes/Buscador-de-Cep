@@ -7,7 +7,7 @@ import retrofit2.http.Path
 
 interface ApiViaCep {
 
-    @GET("ws/{cep}/jsoon")
+    @GET("ws/{cep}/json")
     fun setEndereco(@Path("cep") cep: String): Call<Endereco>
 
 }
